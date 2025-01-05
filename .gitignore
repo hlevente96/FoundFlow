@@ -1,0 +1,15 @@
+# Environment variables
+secret.env
+*.env
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+.idea
+
+# Ignore log files
+*.log
+
+# Ignore Python cache and environment
+__pycache__/
+*.pyc
