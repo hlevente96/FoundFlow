@@ -10,8 +10,8 @@ from starlette import status
 from starlette.responses import RedirectResponse
 
 
-SECRET_KEY = 'de185e48718a77aed3177d59b83e41131d5db7271d99b5f599b902dbbda5bad0'
-ALGORITHM = 'HS256'
+def found_flow():
+    pass
 
 bcrypt_context = CryptContext(schemes=['bcrypt'], deprecated='auto')
 oauth2_bearer = OAuth2PasswordBearer(tokenUrl='/auth/token')
