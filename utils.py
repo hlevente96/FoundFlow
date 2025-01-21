@@ -8,10 +8,12 @@ from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 from starlette import status
 from starlette.responses import RedirectResponse
+import os
+from dotenv import load_dotenv
 
-
-SECRET_KEY = 'de185e48718a77aed3177d59b83e41131d5db7271d99b5f599b902dbbda5bad0'
-ALGORITHM = 'HS256'
+load_dotenv("/Users/leventeharsanyi/Desktop/Herman_Support/secret.env")
+SECRET_KEY = os.getenv("SECRET_KEY")
+ALGORITHM = os.getenv("ALGORITHM")
 
 bcrypt_context = CryptContext(schemes=['bcrypt'], deprecated='auto')
 oauth2_bearer = OAuth2PasswordBearer(tokenUrl='/auth/token')
