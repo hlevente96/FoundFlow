@@ -1,13 +1,426 @@
+/* Global Styles */
 body {
-  background: #fafafa;
-  color: #33333a;
-  padding-top: 70px;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 100px;
 }
 
+main {
+  padding: 2rem 1rem;
+}
+
+/* Headers */
 h1, h2, h3, h4, h5, h6 {
-  color: #323232;
+  margin: 0 0 1rem;
+  color: #222;
 }
 
-.main-color {
-  background-color: #0e76a8 ;
+/* Navbar Styles */
+header {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+header img {
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+header nav a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 0.5rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+  background-color: #fff;
+  color: #101c34;
+}
+
+header nav a.btn-light {
+  background-color: #0e76a8;
+  border: none;
+}
+
+header nav a.btn-light:hover {
+  background-color: #084c71;
+  color: #fff;
+}
+
+/* Progress Bar Styles */
+.progress-bar-section {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 20px;
+  height: 12px;
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.progress-fill {
+  background: #4caf50;
+  height: 100%;
+  transition: width 0.4s ease-in-out;
+  border-radius: 20px;
+}
+
+/* Content Section */
+.content-section {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+.text-and-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.card-placeholder {
+  flex: 1;
+  text-align: center;
+}
+
+.card-placeholder img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Payment Options */
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form h3 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-subtitle {
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0e76a8;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #084c71;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #1e7e34;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .text-and-image {
+    flex-direction: column;
+  }
+
+  .progress-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Footer Styles */
+.footer-section {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  color: #fff;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer-section p a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section p a:hover {
+  color: #4caf50;
+}
+
+/* Login Form Styles */
+
+.container {
+  padding-top: 60px; /* Increased padding for extra space */
+}
+
+.login-card {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-card .card-header {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.login-card .card-body {
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.login-card .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-card .form-group label {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.login-card .form-control {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-card .btn-primary {
+  background-color: #0e76a8;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-card .btn-primary:hover {
+  background-color: #084c71;
+}
+
+.login-card .card-footer {
+  background-color: #001f3f;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.register-link {
+  color: #4caf50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.register-link:hover {
+  color: #fff;
+}
+
+
+/* Register Form Styles (similar to Login Form) */
+.register-card {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-card .card-header {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.register-card .card-body {
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.register-card .form-row {
+  margin-bottom: 1.5rem;
+}
+
+.register-card .form-group label {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.register-card .form-control {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-card .btn-primary {
+  background-color: #0e76a8;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-card .btn-primary:hover {
+  background-color: #084c71;
+}
+
+.register-card .card-footer {
+  background-color: #001f3f;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.register-link {
+  color: #4caf50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.register-link:hover {
+  color: #fff;
 }

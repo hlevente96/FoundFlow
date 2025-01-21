@@ -1,37 +1,22 @@
-<div>
-  <nav class="navbar navbar-expand-md navbar-dark main-color fixed-top">
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        {% if user %}
-        <li class="nav-item active">
-          <a class="nav-link" href="/user/home-page">Home</a>
-        </li>
-        {% endif %}
-      </ul>
-      <ul class="navbar-nav">
-        {% if not user %}
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Herman Charity</a>
-        </li>
-        {% endif %}
-      </ul>
-      <ul class="navbar-nav">
-        {% if not user %}
-        <li class="nav-item active">
-          <a class="nav-link" href="/auth/login-page">Login</a>
-        </li>
-        {% endif %}
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        {% if user %}
-        <li class="nav-item m-1">
-          <a type="button" class="btn btn-outline-light text-white" onclick="logout()">Logout</a>
-        </li>
-        {% endif %}
-      </ul>
-    </div>
-  </nav>
-</div>
+<header class="bg-dark text-white fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex py-3 align-items-center">
+                <img src="/static/images/HOG_LOGO.jpg" alt="Herman Otto Gimnazium Logo" height="50" class="me-2">
+            </div>
+            <nav class="d-flex align-items-center">
+                <a href="/" class="btn btn-outline-light rounded-circle p-1 d-flex justify-content-center align-items-center me-2">
+                    <i class="fa-solid fa-home fa-2x"></i>
+                </a>
+                <a href="payment.html" class="btn btn-outline-light rounded-circle p-1 d-flex justify-content-center align-items-center me-2">
+                    <i class="fa-solid fa-credit-card fa-2x"></i>
+                </a>
+                <a href="/auth/login-page" class="btn btn-light rounded-circle p-1 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                </a>
+            </nav>
+        </div>
+</header>
+
 
 
 

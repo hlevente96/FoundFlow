@@ -1,69 +1,96 @@
 {% include 'layout.html' %}
-<div class="container col-xl-10 col-xxl-8 px-4 py-5">
-    <div class="row align-items-center g-lg-5 py-5">
-      <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">HERMAN SUPPORT DEMO PROJECT</h1>
+<main>
+  <section class="progress-bar-section">
+    <div class="progress-info">
+      <span>225 fő</span>
+      <span>Cél 500</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 45%;"></div>
+    </div>
+  </section>
 
-        <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+  <section class="content-section">
+    <div class="text-and-image">
+      <div class="text">
+        <h2>HERMAN ALUMNI TAGSÁG</h2>
+        <p>
+          Támogasd a tanulmányi versenyeken való részvételt, tanulmányi utak szervezését, sportprogramok
+          lebonyolítását, sporteszközök beszerzését és sporttáborok szervezését! Emellett támogasd a
+          Herman hét programjait, kiállítások részvételét, valamint a házi bajnokságok lebonyolítását.
+          A cél továbbá a gimnáziumban végzett tanulók kapcsolattartásának elősegítése, rendezvények és
+          találkozók szervezésével a diákok és tanárok közötti kapcsolat erősítésére.
+        </p>
+        <p>
+          Fizess elő a Hermanos Alumni tagságra, és töltsd le a személyre szabott digitális alumni kártyádat,
+          vagy küldj egyéni támogatást!
+        </p>
       </div>
-      <div class="col-md-10 mx-auto col-lg-5">
-        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-          </div>
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-          <hr class="my-4">
-          <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
-        </form>
+      <div class="card-placeholder">
+        <img src="/static/images/membership_card.png" alt="Membership Card">
       </div>
     </div>
-</div>
+  </section>
 
-
-<div class="container my-5">
-    <div class="row">
-      <!-- Card 1 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image 1">
-          <div class="card-body">
-            <h5 class="card-title">Card Title 1</h5>
-            <p class="card-text">This is a description for card 1. Add some meaningful content here.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
+  <section class="content-section">
+    <h2 class="mb-3">Our Payment Options</h2>
+    <form>
+      <div class="mb-3">
+        <label for="paymentTypePile" class="form-label">Select Payment Type</label>
+        <select class="form-select mx-auto" id="paymentTypePile" style="max-width: 400px;">
+          <option value="recurring">Recurring Payment</option>
+          <option value="one-time">One-Time Payment</option>
+        </select>
+      </div>
+      <!-- Recurring Payment Options -->
+      <div id="recurringOptions" style="display: none;">
+        <h3 class="mb-3">Select Your Package</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card border-primary mb-3">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Beginner</h5>
+                <h6 class="card-subtitle mb-2 text-primary">€5/month</h6>
+                <p class="card-text text-muted">Support a child's basic educational needs, including school supplies and nutrition.</p>
+                <p class="text-success fw-semibold">Equivalent to a cup of coffee a month!</p>
+                <i class="fa-solid fa-book text-primary fa-2x mb-3"></i>
+                <a href="payment.html" class="btn btn-primary">Go to payments</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-success mb-3">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Medium <span class="badge bg-success">Best Value</span></h5>
+                <h6 class="card-subtitle mb-2 text-success">€15/month</h6>
+                <p class="card-text text-muted">Empower extracurricular activities and access to quality educational programs.</p>
+                <p class="text-success fw-semibold">Equivalent to a movie outing, creating lasting impacts!</p>
+                <i class="fa-solid fa-school text-success fa-2x mb-3"></i>
+                <a href="payment.html" class="btn btn-success">Go to payments</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-warning mb-3">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">VIP</h5>
+                <h6 class="card-subtitle mb-2 text-warning">€30/month</h6>
+                <p class="card-text text-muted">Provide comprehensive aid, including healthcare, education, and housing support.</p>
+                <p class="text-warning fw-semibold">Equivalent to a fancy dinner, but with life-changing results!</p>
+                <i class="fa-solid fa-hands-helping text-warning fa-2x mb-3"></i>
+                <a href="payment.html" class="btn btn-warning">Go to payments</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Card 2 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image 2">
-          <div class="card-body">
-            <h5 class="card-title">Card Title 2</h5>
-            <p class="card-text">This is a description for card 2. Customize this text as needed.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
+      <!-- One-Time Payment Option -->
+      <div id="oneTimeOptions" style="display: none;">
+        <h3 class="mb-3">Make a Difference</h3>
+        <p class="text-muted">Your one-time contribution can create an immediate impact in the lives of those who need it the most. Click the button below to proceed to the payment page and join us in making a positive change.</p>
+        <a href="payment.html" class="btn btn-primary">Go to payments</a>
       </div>
-      <!-- Card 3 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image 3">
-          <div class="card-body">
-            <h5 class="card-title">Card Title 3</h5>
-            <p class="card-text">This is a description for card 3. Make it engaging!</p>
-            <a href="https://www.magyartisza.hu/rendszervaltas" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    </form>
+  </section>
+</main>
+{% include 'footer.html' %}
