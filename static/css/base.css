@@ -23,6 +23,10 @@ p {
     color: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px; /* Adjust this value for the desired offset */
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

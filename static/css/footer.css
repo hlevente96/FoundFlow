@@ -1,7 +1,13 @@
 /* Footer Styles */
 .footer-section {
-  background: linear-gradient(135deg, #001f3f, #005f99);
-  color: #fff;
+  background: linear-gradient(135deg, #001f3f 25%, transparent 25%),
+              linear-gradient(225deg, #001f3f 25%, transparent 25%),
+              linear-gradient(315deg, #001f3f 25%, transparent 25%),
+              linear-gradient(45deg, #001f3f 25%, transparent 25%),
+              linear-gradient(135deg, #001f3f, #005f99); /* Diamond pattern for whole section */
+  background-size: 30px 30px;
+  background-color: #005f99;
+  color: white;
   padding: 1rem 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -10,7 +16,11 @@
 .footer-section p {
   margin: 0.5rem 0;
   font-size: 1rem;
-  color: #fff;
+  color: white; !important;
+}
+
+.footer-section .text-body-secondary {
+  color: white !important;
 }
 
 .footer-section p a {

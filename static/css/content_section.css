@@ -1,12 +1,6 @@
 /* Content Section */
 .content-section {
-  background: linear-gradient(135deg, #001f3f 25%, transparent 25%),
-              linear-gradient(225deg, #001f3f 25%, transparent 25%),
-              linear-gradient(315deg, #001f3f 25%, transparent 25%),
-              linear-gradient(45deg, #001f3f 25%, transparent 25%),
-              linear-gradient(135deg, #001f3f, #005f99); /* Diamond pattern for whole section */
-  background-size: 50px 50px;
-  background-color: #005f99;
+  background: linear-gradient(135deg, #001f3f, #005f99);
   padding: 2rem 1.5rem;
   margin-bottom: 2rem;
   border-radius: 10px;
