@@ -1,5 +1,6 @@
 {% include 'layout.html' %}
 <main>
+
   <section class="progress-bar-section">
     <div class="progress-info">
       <span>225 fő</span>
@@ -92,5 +93,48 @@
       </div>
     </form>
   </section>
+
+  <section class="content-section">
+    <h2 class="mb-3">Frequently Asked Questions</h2>
+    <div class="accordion mx-auto" id="faqAccordion" style="max-width: 800px;">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What is this payment for?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            This payment supports our NGO's mission to provide essential services and aid to communities in need.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How can I make a one-time donation?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Select "One-Time Payment" and enter your preferred donation amount in the provided field.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="#collapseThree">
+            What does a recurring payment cover?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="#headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Recurring payments help sustain our long-term projects and operational costs.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 {% include 'footer.html' %}
