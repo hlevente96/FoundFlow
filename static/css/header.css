@@ -1,0 +1,51 @@
+/* Navbar Styles */
+header {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+header img {
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+header nav a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 0.5rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+  background-color: #fff;
+  color: #101c34;
+}
+
+header nav a.btn-light {
+  background-color: #0e76a8;
+  border: none;
+}
+
+header nav a.btn-light:hover {
+  background-color: #084c71;
+  color: #fff;
+}

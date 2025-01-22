@@ -1,0 +1,72 @@
+/* Register Form Styles (similar to Login Form) */
+.register-card {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-card .card-header {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.register-card .card-body {
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.register-card .form-row {
+  margin-bottom: 1.5rem;
+}
+
+.register-card .form-group label {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.register-card .form-control {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-card .btn-primary {
+  background-color: #0e76a8;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-card .btn-primary:hover {
+  background-color: #084c71;
+}
+
+.register-card .card-footer {
+  background-color: #001f3f;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.register-link {
+  color: #4caf50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.register-link:hover {
+  color: #fff;
+}

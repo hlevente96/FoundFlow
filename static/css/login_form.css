@@ -1,0 +1,77 @@
+/* Login Form Styles */
+
+.container {
+  padding-top: 60px; /* Increased padding for extra space */
+}
+
+.login-card {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-card .card-header {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.login-card .card-body {
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.login-card .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-card .form-group label {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.login-card .form-control {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-card .btn-primary {
+  background-color: #0e76a8;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-card .btn-primary:hover {
+  background-color: #084c71;
+}
+
+.login-card .card-footer {
+  background-color: #001f3f;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.register-link {
+  color: #4caf50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.register-link:hover {
+  color: #fff;
+}

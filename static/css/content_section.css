@@ -1,0 +1,44 @@
+/* Content Section */
+.content-section {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+.text-and-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.card-placeholder {
+  flex: 1;
+  text-align: center;
+}
+
+.card-placeholder img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

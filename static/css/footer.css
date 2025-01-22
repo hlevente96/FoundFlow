@@ -1,0 +1,24 @@
+/* Footer Styles */
+.footer-section {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  color: #fff;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer-section p a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section p a:hover {
+  color: #4caf50;
+}

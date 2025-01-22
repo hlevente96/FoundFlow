@@ -1,0 +1,35 @@
+/* Progress Bar Styles */
+.progress-bar-section {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 20px;
+  height: 12px;
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.progress-fill {
+  background: #4caf50;
+  height: 100%;
+  transition: width 0.4s ease-in-out;
+  border-radius: 20px;
+}
