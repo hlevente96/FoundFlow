@@ -13,20 +13,24 @@
 
   <section class="content-section">
     <div class="text-and-image">
-      <div class="text">
-        <h2>HERMAN ALUMNI TAGSÁG</h2>
-        <p>
-          Támogasd a tanulmányi versenyeken való részvételt, tanulmányi utak szervezését, sportprogramok
-          lebonyolítását, sporteszközök beszerzését és sporttáborok szervezését! Emellett támogasd a
-          Herman hét programjait, kiállítások részvételét, valamint a házi bajnokságok lebonyolítását.
-          A cél továbbá a gimnáziumban végzett tanulók kapcsolattartásának elősegítése, rendezvények és
-          találkozók szervezésével a diákok és tanárok közötti kapcsolat erősítésére.
-        </p>
-        <p>
-          Fizess elő a Hermanos Alumni tagságra, és töltsd le a személyre szabott digitális alumni kártyádat,
-          vagy küldj egyéni támogatást!
-        </p>
+      <div class="text subscribe-text">
+        <h2 class="mb-3">Támogasd Kezdeményezéseinket</h2>
+        <p>Segítsd elő a diákélmények javítását különféle oktatási és szabadidős programokkal. A támogatásoddal mindez lehetővé válik!</p>
+        <h4>Mit Támogathatsz:</h4>
+        <ul>
+          <li>Tanulmányi versenyeken való részvételt, tanulmányi utak szervezését,</li>
+          <li>Sportprogramok és házibajnokságok lebonyolítását, sporteszközök beszerzését és sporttáborok szervezését,</li>
+          <li>A Herman hét programjait, kiállítások részvételét,</li>
+          <li>Diákok, szülők, öregdiákok és tanárok közötti kapcsolat erősítését rendezvények és találkozók szervezésével.</li>
+        </ul>
+        <p><strong>Minden támogatás nagy jelentőséggel bír!</strong></p>
+        <h4 class="mb-3">Csatlakozz a Hermanos Alumni Közösséghez még ma!</h4>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-primary">Előfizetek</a>
+          <a href="#" class="btn btn-secondary">Egyszeri támogatás</a>
+        </div>
       </div>
+
       <div class="card-placeholder">
         <img src="/static/images/membership_card.png" alt="Membership Card">
       </div>
@@ -34,62 +38,62 @@
   </section>
 
   <section class="content-section">
-    <h2 class="mb-3">Our Payment Options</h2>
+    <h2 class="mb-3">Milyen csomagot választasz?</h2>
     <form>
       <div class="mb-3">
-        <label for="paymentTypePile" class="form-label">Select Payment Type</label>
+        <label for="paymentTypePile" class="form-label">Válassz az alábbi támogatási formák közül:</label>
         <select class="form-select mx-auto" id="paymentTypePile" style="max-width: 400px;">
-          <option value="recurring">Recurring Payment</option>
-          <option value="one-time">One-Time Payment</option>
+          <option value="recurring">Ismétlődő Támogatás</option>
+          <option value="one-time">Egyszeri Támogatás</option>
         </select>
       </div>
       <!-- Recurring Payment Options -->
       <div id="recurringOptions" style="display: none;">
-        <h3 class="mb-3">Select Your Package</h3>
+        <h3 class="mb-3">Válassz az alábbi csomagok közül:</h3>
         <div class="row justify-content-center">
           <div class="col-md-4">
             <div class="card border-primary mb-3">
               <div class="card-body text-center">
-                <h5 class="card-title fw-bold">Beginner</h5>
-                <h6 class="card-subtitle mb-2 text-primary">€5/month</h6>
-                <p class="card-text text-muted">Support a child's basic educational needs, including school supplies and nutrition.</p>
-                <p class="text-success fw-semibold">Equivalent to a cup of coffee a month!</p>
+                <h5 class="card-title fw-bold">Alap</h5>
+                <h6 class="card-subtitle mb-2 text-primary">1000 HUF/hó</h6>
+                <p class="card-text text-muted">Támogasd a gyermekek alapvető oktatási szükségleteit, beleértve az iskolaszereket és a étkeztetést.</p>
+                <p class="text-success fw-semibold">Mindösszesen egy csésze kávé havonta!</p>
                 <i class="fa-solid fa-book text-primary fa-2x mb-3"></i>
-                <a href="payment.html" class="btn btn-primary">Go to payments</a>
+                <a href="payment.html" class="btn btn-primary">Előfizetek</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card border-success mb-3">
               <div class="card-body text-center">
-                <h5 class="card-title fw-bold">Medium <span class="badge bg-success">Best Value</span></h5>
-                <h6 class="card-subtitle mb-2 text-success">€15/month</h6>
-                <p class="card-text text-muted">Empower extracurricular activities and access to quality educational programs.</p>
-                <p class="text-success fw-semibold">Equivalent to a movie outing, creating lasting impacts!</p>
+                <h5 class="card-title fw-bold">Kiemelt <span class="badge bg-success">Ajánlott</span></h5>
+                <h6 class="card-subtitle mb-2 text-success">2000 HUF/hó</h6>
+                <p class="card-text text-muted">Támogasd a tanórán kívüli tevékenységeket és a minőségi oktatási programokhoz való hozzáférést.</p>
+                <p class="text-success fw-semibold">Egy moziélmény árából maradandó változást hozhatsz létre!</p>
                 <i class="fa-solid fa-school text-success fa-2x mb-3"></i>
-                <a href="payment.html" class="btn btn-success">Go to payments</a>
+                <a href="payment.html" class="btn btn-success">Előfizetek</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card border-warning mb-3">
               <div class="card-body text-center">
-                <h5 class="card-title fw-bold">VIP</h5>
-                <h6 class="card-subtitle mb-2 text-warning">€30/month</h6>
-                <p class="card-text text-muted">Provide comprehensive aid, including healthcare, education, and housing support.</p>
-                <p class="text-warning fw-semibold">Equivalent to a fancy dinner, but with life-changing results!</p>
+                <h5 class="card-title fw-bold">Prémium</h5>
+                <h6 class="card-subtitle mb-2 text-warning">5000 HUF/hó</h6>
+                <p class="card-text text-muted">Támogasd a tehetséggondozást, innovatív eszközöket és aktív sportolási lehetőségeket!</p>
+                <p class="text-warning fw-semibold">Mint egy átlagos éttermi vacsora, de életet változtató eredményekkel!</p>
                 <i class="fa-solid fa-hands-helping text-warning fa-2x mb-3"></i>
-                <a href="payment.html" class="btn btn-warning">Go to payments</a>
+                <a href="payment.html" class="btn btn-warning">Előfizetek</a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- One-Time Payment Option -->
-      <div id="oneTimeOptions" style="display: none;">
-        <h3 class="mb-3">Make a Difference</h3>
-        <p class="text-muted">Your one-time contribution can create an immediate impact in the lives of those who need it the most. Click the button below to proceed to the payment page and join us in making a positive change.</p>
-        <a href="payment.html" class="btn btn-primary">Go to payments</a>
+      <div id="oneTimeOptions" class="subscribe-text" style="display: none;">
+        <h3 class="mb-3">Te jelentsd a különbséget!</h3>
+        <p>Egy egyszeri hozzájárulás azonnali hatást gyakorolhat azok életére, akiknek a legnagyobb szükségük van rá. Kattintson az alábbi gombra, hogy átirányítsuk a fizetési oldalra, és csatlakozzon hozzánk a pozitív változás érdekében.</p>
+        <a href="payment.html" class="btn btn-primary">Egyszeri támogatás</a>
       </div>
     </form>
   </section>
@@ -99,46 +103,107 @@
   </section>
 
   <section class="content-section">
-    <h2 class="mb-3">Frequently Asked Questions</h2>
-    <div class="accordion mx-auto" id="faqAccordion" style="max-width: 800px;">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            What is this payment for?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            This payment supports our NGO's mission to provide essential services and aid to communities in need.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            How can I make a one-time donation?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Select "One-Time Payment" and enter your preferred donation amount in the provided field.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="#collapseThree">
-            What does a recurring payment cover?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="#headingThree" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Recurring payments help sustain our long-term projects and operational costs.
-          </div>
+  <h2 class="mb-3">Gyakran Ismételt Kérdések (GYIK)</h2>
+  <div class="accordion mx-auto" id="faqAccordion" style="max-width: 800px;">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          1. Miért van szükségetek a támogatásra?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          A Herman Ottó Gimnázium folyamatos fejlesztése és a diákok minőségi oktatása érdekében szeretnénk modern taneszközöket beszerezni, kulturális és sportprogramokat szervezni, illetve olyan környezetet teremteni, ahol a fiatalok kreatív és közösségi szellemben fejlődhetnek. Ehhez elengedhetetlen a rendszeres támogató bázis kialakítása.
         </div>
       </div>
     </div>
-  </section>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          2. Mekkora összeggel tudok segíteni nektek?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Az általad választható, havi rendszeres támogatási csomagok segítenek abban, hogy mindenki megtalálja a számára kényelmes mértékű támogatási formát. Ha pedig egyedi összeget szeretnél felajánlani, arra is van lehetőség.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          3. Beszámoltok arról, hogy mire költitek a támogatást?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Igen! Rendszeresen közzétesszük, milyen fejlesztések és események valósultak meg az alumni-támogatásokból. Így első kézből értesülhetsz arról, hogyan hasznosul a felajánlásod, és milyen eredményeket érünk el együtt.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          4. Szeretném megváltoztatni a támogatási összeget, hogyan tudom?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          A támogatói fiókodban bármikor módosíthatod a havi összeget. Ha úgy érzed, szívesen nagyobb mértékben járulsz hozzá az iskola fejlődéséhez – vagy épp kevesebb vállalást tudsz jelenleg magadra vállalni –, néhány kattintással megteheted a beállításoknál.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          5. Szeretném lemondani a rendszeres támogatást, hogyan tudom?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Természetesen bármikor szüneteltetheted vagy le is mondhatod a rendszeres támogatásod. Ezt a fiókodban elérhető beállítások segítségével, néhány lépésben megteheted.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          6. Hogyan tudom módosítani a fiókbeállításaimat?
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          A sikeres regisztráció és első támogatás után e-mailben kapsz egy visszaigazolást, amelyben megtalálod a belépéshez szükséges linket vagy instrukciókat. A belső felületen bármikor frissítheted személyes adataidat, jelszavadat, valamint a támogatási csomagodat.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSeven">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          7. Nem kaptam meg a visszaigazoló e-mail-t. Mit tehetek?
+        </button>
+      </h2>
+      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Először is nézd meg a spam- vagy promóciós mappát. Ha ott sem találod, akkor kérjük, vedd fel velünk a kapcsolatot a [Herman Ottó Gimnázium Alumni Program] weboldalán található elérhetőségünkön. Mi gyorsan segítünk új visszaigazolót küldeni.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEight">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          8. Hova tudok írni ha bármi probléma merül fel?
+        </button>
+      </h2>
+      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Amennyiben kérdésed lenne vagy technikai problémát tapasztalsz, elérhetőségeinket megtalálod az iskola hivatalos oldalán (vagy az Alumni Program felületén). Írhatsz e-mailt is, és rövid időn belül igyekszünk segítséget nyújtani.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 </main>
 {% include 'footer.html' %}

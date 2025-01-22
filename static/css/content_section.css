@@ -1,6 +1,12 @@
 /* Content Section */
 .content-section {
-  background: linear-gradient(135deg, #001f3f, #005f99);
+  background: linear-gradient(135deg, #001f3f 25%, transparent 25%),
+              linear-gradient(225deg, #001f3f 25%, transparent 25%),
+              linear-gradient(315deg, #001f3f 25%, transparent 25%),
+              linear-gradient(45deg, #001f3f 25%, transparent 25%),
+              linear-gradient(135deg, #001f3f, #005f99); /* Diamond pattern for whole section */
+  background-size: 50px 50px;
+  background-color: #005f99;
   padding: 2rem 1.5rem;
   margin-bottom: 2rem;
   border-radius: 10px;
@@ -8,6 +14,23 @@
   color: #ffffff;
 }
 
+/* Subscribe Text Box (Remove the diamonds here and apply a linear gradient) */
+.subscribe-text {
+  background: linear-gradient(110deg, #002d54, #004a87);
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-text:hover {
+  background: linear-gradient(135deg, #00375f, #004f85); /* Lighter gradient for hover effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Adding a stronger shadow on hover */
+  transform: scale(1.02); /* Slightly increase the size on hover */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Text and Image Wrapper */
 .text-and-image {
   display: flex;
   flex-wrap: wrap;
@@ -15,6 +38,7 @@
   gap: 2rem;
 }
 
+/* Text Container */
 .text {
   flex: 1;
 }
@@ -31,6 +55,16 @@
   color: #ffffff;
 }
 
+/* Call-to-Action Buttons */
+.cta-buttons {
+  margin-top: 2rem;
+}
+
+.cta-buttons .btn {
+  margin-right: 1rem;
+}
+
+/* Card Image */
 .card-placeholder {
   flex: 1;
   text-align: center;
