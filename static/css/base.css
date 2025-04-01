@@ -3,11 +3,8 @@
 /* ----------- */
 body {
   font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
   background: #f9f9f9;
   color: #333;
-  line-height: 1.6;
 }
 
 main {
@@ -178,13 +175,6 @@ form h3 {
 /* ------------- */
 /* Footer Styles */
 /* ------------- */
-.footer-section {
-  background: linear-gradient(135deg, #001f3f, #005f99);
-  color: white;
-  padding: 1rem 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 .footer-section p {
   margin: 0.5rem 0;
@@ -194,14 +184,4 @@ form h3 {
 
 .footer-section .text-body-secondary {
   color: white !important;
-}
-
-.footer-section p a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-section p a:hover {
-  color: #4caf50;
 }
