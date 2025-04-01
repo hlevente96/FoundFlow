@@ -23,20 +23,10 @@ p {
     color: #ffffff;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 10px;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .text-and-image {
     flex-direction: column;
-  }
-
-  .progress-info {
-    flex-direction: column;
-    text-align: center;
   }
 }
 
@@ -53,7 +43,7 @@ html {
   color: #ffffff;
 }
 
-/* Subscribe Text Box (Remove the diamonds here and apply a linear gradient) */
+/* Támogasd Kezdeményezéseinket Blokk */
 .subscribe-text {
   background: linear-gradient(110deg, #002d54, #004a87);
   color: #ffffff;
@@ -92,15 +82,6 @@ html {
   margin-bottom: 1rem;
   line-height: 1.8;
   color: #ffffff;
-}
-
-/* Call-to-Action Buttons */
-.cta-buttons {
-  margin-top: 2rem;
-}
-
-.cta-buttons .btn {
-  margin-right: 1rem;
 }
 
 /* Card Image */
@@ -159,15 +140,6 @@ form h3 {
 .card-title {
   font-size: 1.5rem;
   color: #333;
-}
-
-.card-subtitle {
-  margin-bottom: 1rem;
-}
-
-.card-text {
-  color: #555;
-  font-size: 0.9rem;
 }
 
 .btn {
