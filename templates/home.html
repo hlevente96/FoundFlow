@@ -14,7 +14,7 @@
           <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" id="paymentTypeToggle" checked>
           </div>
-          <span id="rightLabel" class="fw-bold">Ismétlődő Támogatás</span>
+          <span id="rightLabel" class="fw-bold">Ismétlődő Előfizetés</span>
         </div>
       </div>
       <!-- Recurring Payment Options -->
@@ -25,7 +25,7 @@
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Alap</h5>
                 <h6 class="card-subtitle mb-2 text-primary">1000 HUF/hó</h6>
-                <p class="text-success fw-semibold">Mindösszesen egy csésze kávé havonta!</p>
+                <p class="text-primary fw-semibold">Mindösszesen egy csésze kávé havonta!</p>
                 <i class="fa-solid fa-book text-primary fa-2x mb-3"></i>
                 <a href="payment.html" class="btn btn-primary">Előfizetek</a>
               </div>
@@ -48,29 +48,84 @@
                 <h5 class="card-title fw-bold">Prémium</h5>
                 <h6 class="card-subtitle mb-2 text-warning">5000 HUF/hó</h6>
                 <p class="text-warning fw-semibold">Mint egy átlagos éttermi vacsora, de életet változtató eredményekkel!</p>
-                <i class="fa-solid fa-hands-helping text-warning fa-2x mb-3"></i>
+                <i class="fa-solid fa-chalkboard-teacher text-warning fa-2x mb-3"></i>
                 <a href="payment.html" class="btn btn-warning">Előfizetek</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-12">
-            <div class="card border-warning mb-3">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold">Egyedi összeg</h5>
-                <i class="fa-solid fa-hands-helping text-warning fa-2x mb-3"></i>
-                <a href="payment.html" class="btn btn-warning">Előfizetek</a>
+        <div class="col-md-12">
+          <div class="card border-warning mb-3">
+            <div class="card-body text-center">
+              <div class="d-flex justify-content-center align-items-center gap-3">
+                <i class="fa-solid fa-graduation-cap text-danger fa-2x"></i>
+                <h5 class="card-title fw-bold mb-0">Egyedi összeg</h5>
+                <a href="#" id="customAmountBtn" class="btn btn-danger">Előfizetek</a>
+              </div>
+              <div id="customAmountContainer" class="d-flex justify-content-center align-items-center gap-3 mt-3">
+                <input type="number" class="form-control" id="customAmount" placeholder="Add meg az összeget:" style="display: none; width: 210px;" required>
+              </div>
+              <div id="newSubscriptionBtn" style="display: none; margin-top: 10px;">
+                <a href="payment.html" class="btn btn-danger">Előfizetek</a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- One-Time Payment Option -->
-      <div id="oneTimeOptions" class="subscribe-text" style="display: none;">
-        <h3 class="mb-3">Te jelentsd a különbséget!</h3>
-        <p>Egy egyszeri hozzájárulás azonnali hatást gyakorolhat azok életére, akiknek a legnagyobb szükségük van rá. Kattintson az alábbi gombra, hogy átirányítsuk a fizetési oldalra, és csatlakozzon hozzánk a pozitív változás érdekében.</p>
-        <a href="payment.html" class="btn btn-primary">Egyszeri támogatás</a>
+      <div id="oneTimeOptions" style="display: none;">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card border-primary mb-3">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Alap</h5>
+                <h6 class="card-subtitle mb-2 text-primary">1000 HUF</h6>
+                <p class="text-primary fw-semibold">Mindösszesen egy csésze kávé ára!</p>
+                <i class="fa-solid fa-book text-primary fa-2x mb-3"></i>
+                <a href="payment.html" class="btn btn-primary">Támogatom</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-success mb-3">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Kiemelt <span class="badge bg-success">Ajánlott</span></h5>
+                <h6 class="card-subtitle mb-2 text-success">2000 HUF</h6>
+                <p class="text-success fw-semibold">Egy moziélmény árából maradandó változást hozhatsz!</p>
+                <i class="fa-solid fa-school text-success fa-2x mb-3"></i>
+                <a href="payment.html" class="btn btn-success">Támogatom</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-warning mb-3">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Prémium</h5>
+                <h6 class="card-subtitle mb-2 text-warning">5000 HUF</h6>
+                <p class="text-warning fw-semibold">Mint egy átlagos éttermi vacsora, de életet változtató eredményekkel!</p>
+                <i class="fa-solid fa-chalkboard-teacher text-warning fa-2x mb-3"></i>
+                <a href="payment.html" class="btn btn-warning">Támogatom</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card border-warning mb-3">
+            <div class="card-body text-center">
+              <div class="d-flex justify-content-center align-items-center gap-3">
+                <i class="fa-solid fa-graduation-cap text-danger fa-2x"></i>
+                <h5 class="card-title fw-bold mb-0">Egyedi összeg</h5>
+                <a href="#" id="customAmountBtnOT" class="btn btn-danger">Támogatom</a>
+              </div>
+              <div id="customAmountContainerOT" class="d-flex justify-content-center align-items-center gap-3 mt-3">
+                <input type="number" class="form-control" id="customAmountOT" placeholder="Add meg az összeget:" style="display: none; width: 210px;" required>
+              </div>
+              <div id="newSubscriptionBtnOT" style="display: none; margin-top: 10px;">
+                <a href="payment.html" class="btn btn-danger">Támogatom</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </form>
   </section>
@@ -209,4 +264,15 @@
 
 
 </main>
-{% include 'footer.html' %}
+
+<footer class="footer-section">
+  <div class="container">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#package" class="nav-link px-2 text-body-secondary">Packages</a></li>
+      <li class="nav-item"><a href="#faq" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2025 Miskolci Herman Ottó Gimnázium.</p>
+    <p class="text-center text-body-secondary">All Rights Reserved.</p>
+  </div>
+</footer>

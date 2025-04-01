@@ -19,3 +19,34 @@
         // Add event listener for toggle switch
         paymentToggle.addEventListener('change', updatePaymentDisplay);
     });
+
+    document.getElementById('customAmountBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+
+      // Hide the initial button
+      const button = document.getElementById('customAmountBtn');
+      button.style.display = 'none';
+
+      // Show the input field
+      const input = document.getElementById('customAmount');
+      input.style.display = 'inline-block';
+
+      // Show the second "Előfizetek" button below the input field
+      const newButton = document.getElementById('newSubscriptionBtn');
+      newButton.style.display = 'block';
+    });
+    document.getElementById('customAmountBtnOT').addEventListener('click', function(e) {
+      e.preventDefault();
+
+      // Hide the initial button
+      const button = document.getElementById('customAmountBtnOT');
+      button.style.display = 'none';
+
+      // Show the input field
+      const input = document.getElementById('customAmountOT');
+      input.style.display = 'inline-block';
+
+      // Show the second "Előfizetek" button below the input field
+      const newButton = document.getElementById('newSubscriptionBtnOT');
+      newButton.style.display = 'block';
+    });
