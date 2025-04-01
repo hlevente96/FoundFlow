@@ -1,19 +1,16 @@
-/* Global Styles */
+/* ----------- */
+/* Base Styles */
+/* ----------- */
 body {
   font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
   background: #f9f9f9;
   color: #333;
-  line-height: 1.6;
-  padding-top: 100px;
 }
 
 main {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 
-/* Headers */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem;
   color: #222;
@@ -23,21 +20,168 @@ p {
     color: #ffffff;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 20px; /* Adjust this value for the desired offset */
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .text-and-image {
     flex-direction: column;
   }
-
-  .progress-info {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 
+/* --------------- */
+/* Content Section */
+/* --------------- */
+.content-section {
+  background: linear-gradient(135deg, #001f3f, #005f99);
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+/* Támogasd Kezdeményezéseinket Blokk */
+.subscribe-text {
+  background: linear-gradient(110deg, #002d54, #004a87);
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-text:hover {
+  background: linear-gradient(135deg, #00375f, #004f85); /* Lighter gradient for hover effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Adding a stronger shadow on hover */
+  transform: scale(1.02); /* Slightly increase the size on hover */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Text and Image Wrapper */
+.text-and-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Text Container */
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+/* Card Image */
+.card-placeholder {
+  flex: 1;
+  text-align: center;
+}
+
+.card-placeholder img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --------------- */
+/* Payment Options */
+/* --------------- */
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form h3 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0e76a8;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #084c71;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #1e7e34;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* ------------- */
+/* Footer Styles */
+/* ------------- */
+
+.footer-section p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: white; !important;
+}
+
+.footer-section .text-body-secondary {
+  color: white !important;
+}
