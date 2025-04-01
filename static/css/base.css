@@ -6,11 +6,10 @@ body {
   background: #f9f9f9;
   color: #333;
   line-height: 1.6;
-  padding-top: 100px;
 }
 
 main {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 
 /* Headers */
@@ -25,7 +24,7 @@ p {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 20px; /* Adjust this value for the desired offset */
+  scroll-padding-top: 10px; /* Adjust this value for the desired offset */
 }
 
 /* Responsive Design */

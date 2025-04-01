@@ -1,14 +1,78 @@
 {% include 'layout.html' %}
 <main>
-
-  <section class="progress-bar-section">
-    <div class="progress-info">
-      <span>225 fő</span>
-      <span>Cél 500</span>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 45%;"></div>
-    </div>
+  <section id="package" class="content-section">
+    <form>
+      <div class="mb-3">
+        <div class="d-flex flex-column align-items-center py-3">
+          <img src="/static/images/HOG_LOGO.jpg" alt="Herman Otto Gimnazium Logo" height="50" class="mb-2">
+          <p></p>
+          <h2 class="mb-3 text-center">Támogasd Kezdeményezéseinket</h2>
+        </div>
+        <p>Segítsd elő a diákélmények javítását különféle oktatási és szabadidős programokkal.</p>
+        <div class="d-flex justify-content-center align-items-center gap-3 my-3">
+          <span id="leftLabel" class="fw-bold">Egyszeri Támogatás</span>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="paymentTypeToggle" checked>
+          </div>
+          <span id="rightLabel" class="fw-bold">Ismétlődő Támogatás</span>
+        </div>
+      </div>
+      <!-- Recurring Payment Options -->
+      <div id="recurringOptions" style="display: none;">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card border-primary mb-3">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Alap</h5>
+                <h6 class="card-subtitle mb-2 text-primary">1000 HUF/hó</h6>
+                <p class="text-success fw-semibold">Mindösszesen egy csésze kávé havonta!</p>
+                <i class="fa-solid fa-book text-primary fa-2x mb-3"></i>
+                <a href="payment.html" class="btn btn-primary">Előfizetek</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-success mb-3">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Kiemelt <span class="badge bg-success">Ajánlott</span></h5>
+                <h6 class="card-subtitle mb-2 text-success">2000 HUF/hó</h6>
+                <p class="text-success fw-semibold">Egy moziélmény árából maradandó változást hozhatsz!</p>
+                <i class="fa-solid fa-school text-success fa-2x mb-3"></i>
+                <a href="payment.html" class="btn btn-success">Előfizetek</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-warning mb-3">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Prémium</h5>
+                <h6 class="card-subtitle mb-2 text-warning">5000 HUF/hó</h6>
+                <p class="text-warning fw-semibold">Mint egy átlagos éttermi vacsora, de életet változtató eredményekkel!</p>
+                <i class="fa-solid fa-hands-helping text-warning fa-2x mb-3"></i>
+                <a href="payment.html" class="btn btn-warning">Előfizetek</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="card border-warning mb-3">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Egyedi összeg</h5>
+                <i class="fa-solid fa-hands-helping text-warning fa-2x mb-3"></i>
+                <a href="payment.html" class="btn btn-warning">Előfizetek</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- One-Time Payment Option -->
+      <div id="oneTimeOptions" class="subscribe-text" style="display: none;">
+        <h3 class="mb-3">Te jelentsd a különbséget!</h3>
+        <p>Egy egyszeri hozzájárulás azonnali hatást gyakorolhat azok életére, akiknek a legnagyobb szükségük van rá. Kattintson az alábbi gombra, hogy átirányítsuk a fizetési oldalra, és csatlakozzon hozzánk a pozitív változás érdekében.</p>
+        <a href="payment.html" class="btn btn-primary">Egyszeri támogatás</a>
+      </div>
+    </form>
   </section>
 
   <section class="content-section">
@@ -35,67 +99,6 @@
         <img src="/static/images/membership_card.png" alt="Membership Card">
       </div>
     </div>
-  </section>
-
-  <section id="package" class="content-section">
-    <h2 class="mb-3">Milyen csomagot választasz?</h2>
-    <form>
-      <div class="mb-3">
-        <label for="paymentTypePile" class="form-label">Válassz az alábbi támogatási formák közül:</label>
-        <select class="form-select mx-auto" id="paymentTypePile" style="max-width: 400px;">
-          <option value="recurring">Ismétlődő Támogatás</option>
-          <option value="one-time">Egyszeri Támogatás</option>
-        </select>
-      </div>
-      <!-- Recurring Payment Options -->
-      <div id="recurringOptions" style="display: none;">
-        <h3 class="mb-3">Válassz az alábbi csomagok közül:</h3>
-        <div class="row justify-content-center">
-          <div class="col-md-4">
-            <div class="card border-primary mb-3">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold">Alap</h5>
-                <h6 class="card-subtitle mb-2 text-primary">1000 HUF/hó</h6>
-                <p class="card-text text-muted">Támogasd a gyermekek alapvető oktatási szükségleteit, beleértve az iskolaszereket és a étkeztetést.</p>
-                <p class="text-success fw-semibold">Mindösszesen egy csésze kávé havonta!</p>
-                <i class="fa-solid fa-book text-primary fa-2x mb-3"></i>
-                <a href="payment.html" class="btn btn-primary">Előfizetek</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-success mb-3">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold">Kiemelt <span class="badge bg-success">Ajánlott</span></h5>
-                <h6 class="card-subtitle mb-2 text-success">2000 HUF/hó</h6>
-                <p class="card-text text-muted">Támogasd a tanórán kívüli tevékenységeket és a minőségi oktatási programokhoz való hozzáférést.</p>
-                <p class="text-success fw-semibold">Egy moziélmény árából maradandó változást hozhatsz létre!</p>
-                <i class="fa-solid fa-school text-success fa-2x mb-3"></i>
-                <a href="payment.html" class="btn btn-success">Előfizetek</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-warning mb-3">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold">Prémium</h5>
-                <h6 class="card-subtitle mb-2 text-warning">5000 HUF/hó</h6>
-                <p class="card-text text-muted">Támogasd a tehetséggondozást, innovatív eszközöket és aktív sportolási lehetőségeket!</p>
-                <p class="text-warning fw-semibold">Mint egy átlagos éttermi vacsora, de életet változtató eredményekkel!</p>
-                <i class="fa-solid fa-hands-helping text-warning fa-2x mb-3"></i>
-                <a href="payment.html" class="btn btn-warning">Előfizetek</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- One-Time Payment Option -->
-      <div id="oneTimeOptions" class="subscribe-text" style="display: none;">
-        <h3 class="mb-3">Te jelentsd a különbséget!</h3>
-        <p>Egy egyszeri hozzájárulás azonnali hatást gyakorolhat azok életére, akiknek a legnagyobb szükségük van rá. Kattintson az alábbi gombra, hogy átirányítsuk a fizetési oldalra, és csatlakozzon hozzánk a pozitív változás érdekében.</p>
-        <a href="payment.html" class="btn btn-primary">Egyszeri támogatás</a>
-      </div>
-    </form>
   </section>
 
   <section class="content-section video-section" style="text-align: center; margin: 2rem 0;">
